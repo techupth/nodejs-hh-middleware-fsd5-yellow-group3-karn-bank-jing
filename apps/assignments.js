@@ -2,6 +2,7 @@ import { Router } from "express";
 
 import { assignments as assignmentsFromFile } from "../data/assignments.js";
 import { comments as commentsFromFile } from "../data/comments.js";
+import { validateAssignmentData } from "../middlewares/assignmentValidation.js";
 
 let assignments = [...assignmentsFromFile];
 let comments = [...commentsFromFile];
